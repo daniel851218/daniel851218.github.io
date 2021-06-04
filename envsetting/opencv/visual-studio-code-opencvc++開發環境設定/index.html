@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zn-TW">
+    <head>
+        <title>Visual Studio Code OpenCV(C&#43;&#43;)開發環境設定</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="header">
+                <h1>Visual Studio Code OpenCV(C&#43;&#43;)開發環境設定</h1>
+            </div>
+
+            <div class="navbar">
+                <a href="https://daniel851218.github.io/">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        環境設定
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/envsetting/opencv/">OpenCV</a>
+                        <a href="#">Qt</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about">
+                <h2>About Me</h2>
+                <img src="/img/img_avatar.png" alt="" class="center" >
+            </div>
+
+            <div class="main">
+                <div class="content">
+                    <p><img src="https://i.imgur.com/okPIhx1.png" alt=""></p>
+<h1 id="contents">Contents</h1>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%9Dmingw">安裝MinGW</a>
+<ul>
+<li><a href="#%E4%B8%8B%E8%BC%89mingw-w64">下載MinGW-w64</a></li>
+<li><a href="#%E9%96%8B%E5%A7%8B%E5%AE%89%E8%A3%9D">開始安裝</a></li>
+<li><a href="#%E8%A8%AD%E5%AE%9A%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8">設定環境變數</a></li>
+<li><a href="#%E6%B8%AC%E8%A9%A6">測試</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B7%A8%E8%AD%AFopencv">編譯OpenCV</a>
+<ul>
+<li><a href="#%E5%BB%BA%E7%AB%8B%E8%B3%87%E6%96%99%E5%A4%BE">建立資料夾</a></li>
+<li><a href="#%E7%B7%A8%E8%AD%AFopencv-1">編譯OpenCV</a></li>
+<li><a href="#%E8%A8%AD%E5%AE%9A%E7%92%B0%E5%A2%83%E8%AE%8A%E6%95%B8-1">設定環境變數</a></li>
+</ul>
+</li>
+<li><a href="#vscode%E7%92%B0%E5%A2%83%E8%A8%AD%E5%AE%9A">VSCode環境設定</a>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%9Dccextension">安裝C/C++Extension</a></li>
+<li><a href="#%E6%96%B0%E5%A2%9Ec_cpp_propertiesjson">新增c_cpp_properties.json</a></li>
+<li><a href="#%E6%96%B0%E5%A2%9Elaunchjson">新增launch.json</a></li>
+<li><a href="#%E6%96%B0%E5%A2%9Etasksjson">新增tasks.json</a></li>
+<li><a href="#%E6%B8%AC%E8%A9%A6-1">測試</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h1 id="安裝mingw">安裝MinGW</h1>
+<h2 id="下載mingw-w64">下載MinGW-w64</h2>
+<p><img src="https://i.imgur.com/9KyH8Tb.png" alt="">
+<a href="https://sourceforge.net/projects/mingw-w64/">MinGW-w64</a></p>
+<h2 id="開始安裝">開始安裝</h2>
+<p><img src="https://i.imgur.com/SwqCIps.png" alt=""></p>
+<p><img src="https://i.imgur.com/8bPqpFS.png" alt=""></p>
+<p><img src="https://i.imgur.com/J9SlkmO.png" alt=""></p>
+<p><img src="https://i.imgur.com/UKmm9nm.png" alt=""></p>
+<p><img src="https://i.imgur.com/kmjvkbb.png" alt=""></p>
+<h2 id="設定環境變數">設定環境變數</h2>
+<p><img src="https://i.imgur.com/Xyrj1js.png" alt=""></p>
+<p><img src="https://i.imgur.com/S4ywMO6.png" alt=""></p>
+<h2 id="測試">測試</h2>
+<p><img src="https://i.imgur.com/so7hFKc.png" alt=""></p>
+<p>打開cmd，執行指令：<strong><span style="color: green; font-size: 14px; white-space:nowrap;">g&#43;&#43; --version</span></strong></p>
+<h1 id="編譯opencv">編譯OpenCV</h1>
+<h2 id="建立資料夾">建立資料夾</h2>
+<p><img src="https://i.imgur.com/YaqAMdP.png" alt=""></p>
+<h2 id="編譯opencv-1">編譯OpenCV</h2>
+<p><img src="https://i.imgur.com/B7ITjWK.png" alt=""></p>
+<p><img src="https://i.imgur.com/16RSHTw.png" alt=""></p>
+<p><img src="https://i.imgur.com/P8vYtNN.png" alt=""></p>
+<p><img src="https://i.imgur.com/zS84Q3H.png" alt=""></p>
+<p><em><strong>勾選：</strong></em></p>
+<p><strong><span style="color: red; font-size: 14px; white-space:nowrap;">BUILD_opencv_world</span></strong></p>
+<p><strong><span style="color: red; font-size: 14px; white-space:nowrap;">WITH_OPENGL</span></strong></p>
+<p><em><strong>取消勾選：</strong></em></p>
+<p><strong><span style="color: red; font-size: 14px; white-space:nowrap;">OPENCV_ENABLE_ALLOCATOR_STATS</span></strong></p>
+<p><img src="https://i.imgur.com/9KYIe4W.png" alt=""></p>
+<p>打開cmd，執行指令：<strong><span style="color: green; font-size: 14px; white-space:nowrap;">mingw32-make -j4</span></strong></p>
+<p><img src="https://i.imgur.com/sJwcwmo.png" alt=""></p>
+<p>執行指令：<strong><span style="color: green; font-size: 14px; white-space:nowrap;">mingw32-make install</span></strong></p>
+<h2 id="設定環境變數-1">設定環境變數</h2>
+<p><img src="https://i.imgur.com/3w4RzMS.png" alt=""></p>
+<h1 id="vscode環境設定">VSCode環境設定</h1>
+<h2 id="安裝ccextension">安裝C/C++Extension</h2>
+<p><img src="https://i.imgur.com/g6DcuEP.png" alt=""></p>
+<h2 id="新增c_cpp_propertiesjson">新增c_cpp_properties.json</h2>
+<p><img src="https://i.imgur.com/PvZqls2.png" alt=""></p>
+<p>按下Ctrl+Shift+P後，選擇 <strong><span style="color: green; font-size: 14px; white-space:nowrap;">Edit Configurations</span></strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;configurations&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Win32&#34;</span>,
+            <span style="color:#f92672">&#34;includePath&#34;</span>: [
+                <span style="color:#e6db74">&#34;${workspaceFolder}/**&#34;</span>,
+                <span style="color:#e6db74">&#34;C:\\opencv\\build\\x64\\MinGW\\install\\include&#34;</span>,
+                <span style="color:#e6db74">&#34;C:\\opencv\\build\\x64\\MinGW\\install\\include\\opencv&#34;</span>,
+                <span style="color:#e6db74">&#34;C:\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2&#34;</span>
+            ],
+            <span style="color:#f92672">&#34;defines&#34;</span>: [
+                <span style="color:#e6db74">&#34;_DEBUG&#34;</span>,
+                <span style="color:#e6db74">&#34;UNICODE&#34;</span>,
+                <span style="color:#e6db74">&#34;_UNICODE&#34;</span>
+            ],
+            <span style="color:#f92672">&#34;compilerPath&#34;</span>: <span style="color:#e6db74">&#34;C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe&#34;</span>,
+            <span style="color:#f92672">&#34;cStandard&#34;</span>: <span style="color:#e6db74">&#34;gnu17&#34;</span>,
+            <span style="color:#f92672">&#34;cppStandard&#34;</span>: <span style="color:#e6db74">&#34;gnu++14&#34;</span>,
+            <span style="color:#f92672">&#34;intelliSenseMode&#34;</span>: <span style="color:#e6db74">&#34;windows-gcc-x64&#34;</span>
+        }
+    ],
+    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#ae81ff">4</span>
+}
+</code></pre></div><h2 id="新增launchjson">新增launch.json</h2>
+<p><img src="https://i.imgur.com/FlznuBU.png" alt=""></p>
+<p>按下Ctrl+Shift+D後，選擇 <strong><span style="color: green; font-size: 14px; white-space:nowrap;">create a launch.json file</span></strong></p>
+<p><img src="https://i.imgur.com/W4ElJRy.png" alt=""></p>
+<p>選擇 <strong><span style="color: green; font-size: 14px; white-space:nowrap;">C&#43;&#43;(GDB/LLDB)</span></strong></p>
+<p><img src="https://i.imgur.com/AsVVOMp.png" alt=""></p>
+<p>選擇 <strong><span style="color: green; font-size: 14px; white-space:nowrap;">g&#43;&#43;.exe</span></strong></p>
+<p><img src="https://i.imgur.com/oOPrZ66.png" alt=""></p>
+<p>忽略Error，編輯 <strong><span style="color: green; font-size: 14px; white-space:nowrap;">launch.json</span></strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;0.2.0&#34;</span>,
+    <span style="color:#f92672">&#34;configurations&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;g++.exe - 建置及偵錯使用中的檔案&#34;</span>,
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;cppdbg&#34;</span>,
+            <span style="color:#f92672">&#34;request&#34;</span>: <span style="color:#e6db74">&#34;launch&#34;</span>,
+            <span style="color:#f92672">&#34;program&#34;</span>: <span style="color:#e6db74">&#34;${fileDirname}\\${fileBasenameNoExtension}.exe&#34;</span>,
+            <span style="color:#f92672">&#34;args&#34;</span>: [],
+            <span style="color:#f92672">&#34;stopAtEntry&#34;</span>: <span style="color:#66d9ef">false</span>,
+            <span style="color:#f92672">&#34;cwd&#34;</span>: <span style="color:#e6db74">&#34;${workspaceFolder}&#34;</span>,
+            <span style="color:#f92672">&#34;environment&#34;</span>: [],
+            <span style="color:#f92672">&#34;externalConsole&#34;</span>: <span style="color:#66d9ef">false</span>,
+            <span style="color:#f92672">&#34;MIMode&#34;</span>: <span style="color:#e6db74">&#34;gdb&#34;</span>,
+            <span style="color:#f92672">&#34;miDebuggerPath&#34;</span>: <span style="color:#e6db74">&#34;C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe&#34;</span>,
+            <span style="color:#f92672">&#34;setupCommands&#34;</span>: [
+                {
+                    <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;啟用 gdb 的美化顯示&#34;</span>,
+                    <span style="color:#f92672">&#34;text&#34;</span>: <span style="color:#e6db74">&#34;-enable-pretty-printing&#34;</span>,
+                    <span style="color:#f92672">&#34;ignoreFailures&#34;</span>: <span style="color:#66d9ef">true</span>
+                }
+            ],
+            <span style="color:#f92672">&#34;preLaunchTask&#34;</span>: <span style="color:#e6db74">&#34;C/C++: g++.exe 建置使用中檔案&#34;</span>
+        }
+    ]
+}
+</code></pre></div><h2 id="新增tasksjson">新增tasks.json</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;tasks&#34;</span>: [
+        {
+            <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;cppbuild&#34;</span>,
+            <span style="color:#f92672">&#34;label&#34;</span>: <span style="color:#e6db74">&#34;C/C++: g++.exe 建置使用中檔案&#34;</span>,
+            <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe&#34;</span>,
+            <span style="color:#f92672">&#34;args&#34;</span>: [
+                <span style="color:#e6db74">&#34;-g&#34;</span>,
+                <span style="color:#e6db74">&#34;${file}&#34;</span>,
+                <span style="color:#e6db74">&#34;-o&#34;</span>,
+                <span style="color:#e6db74">&#34;${fileDirname}\\${fileBasenameNoExtension}.exe&#34;</span>,
+                <span style="color:#e6db74">&#34;-I&#34;</span>, <span style="color:#e6db74">&#34;C:\\opencv\\build\\x64\\MinGW\\install\\include&#34;</span>,
+                <span style="color:#e6db74">&#34;-I&#34;</span>, <span style="color:#e6db74">&#34;C:\\opencv\\build\\x64\\MinGW\\install\\include\\opencv&#34;</span>,
+                <span style="color:#e6db74">&#34;-I&#34;</span>, <span style="color:#e6db74">&#34;C:\\opencv\\build\\x64\\MinGW\\install\\include\\opencv2&#34;</span>,
+                <span style="color:#e6db74">&#34;-L&#34;</span>, <span style="color:#e6db74">&#34;C:\\opencv\\build\\x64\\MinGW\\install\\x64\\mingw\\lib&#34;</span>,
+                <span style="color:#e6db74">&#34;-l&#34;</span>, <span style="color:#e6db74">&#34;libopencv_world3412&#34;</span>
+            ],
+            <span style="color:#f92672">&#34;options&#34;</span>: {
+                <span style="color:#f92672">&#34;cwd&#34;</span>: <span style="color:#e6db74">&#34;${workspaceFolder}&#34;</span>
+            },
+            <span style="color:#f92672">&#34;problemMatcher&#34;</span>: [
+                <span style="color:#e6db74">&#34;$gcc&#34;</span>
+            ],
+            <span style="color:#f92672">&#34;group&#34;</span>: {
+                <span style="color:#f92672">&#34;kind&#34;</span>: <span style="color:#e6db74">&#34;build&#34;</span>,
+                <span style="color:#f92672">&#34;isDefault&#34;</span>: <span style="color:#66d9ef">true</span>
+            },
+            <span style="color:#f92672">&#34;detail&#34;</span>: <span style="color:#e6db74">&#34;偵錯工具產生的工作。&#34;</span>
+        }
+    ],
+    <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;2.0.0&#34;</span>
+}
+</code></pre></div><h2 id="測試-1">測試</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;opencv2/imgcodecs.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;opencv2/imgproc.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;opencv2/highgui.hpp&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> cv;
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+{
+    Mat img <span style="color:#f92672">=</span> imread(<span style="color:#e6db74">&#34;flower.jpg&#34;</span>);
+    resize(img, img, Size(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>), <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.1</span>);
+    imshow(<span style="color:#e6db74">&#34;test&#34;</span>, img);
+    waitKey();
+    destroyAllWindows();
+
+
+    system(<span style="color:#e6db74">&#34;PAUSE&#34;</span>);
+    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+}
+</code></pre></div><p><img src="https://i.imgur.com/dm4cXoB.png" alt=""></p>
+<p>按下F5，開始 <strong><span style="color: green; font-size: 14px; white-space:nowrap;">Debug</span></strong></p>
+<p>完成!!!</p>
+
+                </div>
+            </div>
+
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
